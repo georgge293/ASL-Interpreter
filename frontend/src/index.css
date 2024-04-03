@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.WebcamOutputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.WebcamFeed video {
+  width: 800px; /* Adjust to your needs */
+  height: 600px; /* Adjust to match your video feed */
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.OutputText {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background-color: #ececec;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.OutputText textarea {
+  width: calc(100% - 40px); /* Full width minus padding */
+  height: calc(100% - 40px); /* Full height minus padding */
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 20px;
+  background-color: transparent;
+  overflow-y: auto; /* Allows scrolling */
+  box-sizing: border-box; /* Padding does not affect the width and height */
+}
+
+/* Hide the scrollbar for textarea */
+.OutputText textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.OutputText textarea {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.OutputText span {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 6px;
+} 
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+}
